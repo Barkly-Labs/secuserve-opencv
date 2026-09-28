@@ -1,7 +1,8 @@
 """
 State Machine Base class 
 """
-import consoleLog
+from util import consoleLog
+
 
 class State(object):
     """
@@ -10,12 +11,10 @@ class State(object):
     """
 
     def __init__(self):
-        consoleLog.PipeLine_Ok('Processing current state:'+ str(self))
-    
-    def next_state(self,state):
-        consoleLog.Warning('Next state:' +str(state))
-        
+        consoleLog.PipeLine_Ok("Processing current state:" + str(self))
 
+    def next_state(self, state):
+        consoleLog.Warning("Next state:" + str(state))
 
     def on_event(self, event):
         """
@@ -34,6 +33,3 @@ class State(object):
         Returns the name of the State.
         """
         return self.__class__.__name__
-    
-    
-    

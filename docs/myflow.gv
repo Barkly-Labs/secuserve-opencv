@@ -1,0 +1,264 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='#cf142b'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_c1cd0ec3 [label="26: __repr__()" name="state::State.__repr__" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_d749d3ab [label="114: __repr__()" name="faceDataStruture::UserData.__repr__" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_79807bb1 [label="0: (global)()" name="__main__::(global)" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_820b1c19 [label="31: read()" name="videoThread::ThreadingClass.read" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_8dbe98af [label="30: getAmountOfEntrys()" name="database::getAmountOfEntrys" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_e3541cdf [label="324: downloadUserFaces()" name="videoRequired::RequiredCode.downloadUserFaces" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_ab6fd50a [label="83: __init__()" name="pipelineStates::Error.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_e341d9d6 [label="32: __str__()" name="state::State.__str__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_cdd7156b [label="43: setUserStatus()" name="faceDataStruture::UserData.setUserStatus" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_d5f5abda [label="37: userUser()" name="userStats::UserStats.userUser" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_c7ffcca7 [label="38: setupPipeline()" name="videoRequired::RequiredCode.setupPipeline" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_20fabb35 [label="310: downloadFacesAndProssesThem()" name="videoRequired::RequiredCode.downloadFacesAndProssesThem" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_ad37dccb [label="27: on_event()" name="pipelineStates::SetupPipeLine.on_event" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_9e096986 [label="34: release()" name="videoThread::ThreadingClass.release" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_8dedaf0c [label="389: setProcessingLed()" name="videoRequired::RequiredCode.setProcessingLed" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_48c66c4f [label="360: sendFaceCount()" name="videoRequired::RequiredCode.sendFaceCount" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_8e0a082f [label="10: saveImage()" name="userStats::UserStats.saveImage" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_4ca78a62 [label="72: setUserPhoneNumber()" name="faceDataStruture::UserData.setUserPhoneNumber" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_8e51d536 [label="53: setUserImg()" name="faceDataStruture::UserData.setUserImg" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_2af8bf46 [label="18: __init__()" name="faceDataStruture::UserData.__init__" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_a258044f [label="60: userUnwanted()" name="userStats::UserStats.userUnwanted" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_583be892 [label="268: makefiledirs()" name="videoRequired::RequiredCode.makefiledirs" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_7caf6345 [label="41: on_event()" name="pipelineStates::TrainPipeline.on_event" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_e01efbaa [label="90: getUserName()" name="faceDataStruture::UserData.getUserName" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_e4a66fab [label="283: UserDataList()" name="videoRequired::RequiredCode.UserDataList" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_99640d0b [label="350: sendProgramStatus()" name="videoRequired::RequiredCode.sendProgramStatus" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_9d641324 [label="95: getUserStatus()" name="faceDataStruture::UserData.getUserStatus" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_d5ffb2f3 [label="17: main()" name="__main__::main" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_f7432b66 [label="0: (global)()" name="const::(global)" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_852b9a5d [label="125: face_distance_to_conf()" name="knnClasifiyer::face_distance_to_conf" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_a6f6d079 [label="26: getSumOfDigits()" name="faceDataStruture::UserData.getSumOfDigits" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_afce22e3 [label="371: sendUserInfoToSocket()" name="videoRequired::RequiredCode.sendUserInfoToSocket" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_d7c9bdf6 [label="100: getUserImg()" name="faceDataStruture::UserData.getUserImg" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_0d14ae39 [label="8: getFaces()" name="database::getFaces" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_2502774d [label="84: predict()" name="knnClasifiyer::predict" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_16b0d9f0 [label="90: reconitionPipeline()" name="videoRequired::RequiredCode.reconitionPipeline" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_e79aa105 [label="105: getUserUrl()" name="faceDataStruture::UserData.getUserUrl" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_94b7a319 [label="62: setUserUrl()" name="faceDataStruture::UserData.setUserUrl" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_f14444e8 [label="111: on_event()" name="pipelineStates::PipeLine.on_event" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_5b5bf5f9 [label="64: saveTrainingData()" name="knnClasifiyer::saveTrainingData" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_467eaa3c [label="15: userAdmin()" name="userStats::UserStats.userAdmin" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_d9bb932a [label="110: getUserPhoneNumber()" name="faceDataStruture::UserData.getUserPhoneNumber" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_a7477e5e [label="32: setUserName()" name="faceDataStruture::UserData.setUserName" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_729cbd01 [label="55: on_event()" name="pipelineStates::RunReconitionPipeLine.on_event" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_7a06a70e [label="25: loadTrainingData()" name="knnClasifiyer::loadTrainingData" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_d3a83081 [label="110: face_predict_data()" name="knnClasifiyer::face_predict_data" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_ea3e722d [label="263: getAmmountOfFaces()" name="videoRequired::RequiredCode.getAmmountOfFaces" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_0f2039d0 [label="379: setUpIndicatorLight()" name="videoRequired::RequiredCode.setUpIndicatorLight" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_ef9bf382 [label="76: trainPipeLine()" name="videoRequired::RequiredCode.trainPipeLine" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_fdda60bc [label="15: next_state()" name="state::State.next_state" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_c2643411 [label="74: userUnknown()" name="userStats::UserStats.userUnknown" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_19be0bcf [label="19: _reader()" name="videoThread::ThreadingClass._reader" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_a1b4b6bf [label="46: train()" name="knnClasifiyer::train" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_79807bb1 -> node_d5ffb2f3 [color="#cf142b" penwidth="2"];
+node_f7432b66 -> node_820b1c19 [color="#cf142b" penwidth="2"];
+node_0d14ae39 -> node_820b1c19 [color="#cf142b" penwidth="2"];
+node_8dbe98af -> node_820b1c19 [color="#cf142b" penwidth="2"];
+node_2af8bf46 -> node_a7477e5e [color="#cf142b" penwidth="2"];
+node_2af8bf46 -> node_cdd7156b [color="#cf142b" penwidth="2"];
+node_2af8bf46 -> node_8e51d536 [color="#cf142b" penwidth="2"];
+node_2af8bf46 -> node_94b7a319 [color="#cf142b" penwidth="2"];
+node_2af8bf46 -> node_4ca78a62 [color="#cf142b" penwidth="2"];
+node_4ca78a62 -> node_a6f6d079 [color="#cf142b" penwidth="2"];
+node_4ca78a62 -> node_a6f6d079 [color="#cf142b" penwidth="2"];
+node_d749d3ab -> node_e01efbaa [color="#cf142b" penwidth="2"];
+node_d749d3ab -> node_9d641324 [color="#cf142b" penwidth="2"];
+node_d749d3ab -> node_d7c9bdf6 [color="#cf142b" penwidth="2"];
+node_d749d3ab -> node_e79aa105 [color="#cf142b" penwidth="2"];
+node_d749d3ab -> node_d9bb932a [color="#cf142b" penwidth="2"];
+node_a1b4b6bf -> node_7a06a70e [color="#cf142b" penwidth="2"];
+node_a1b4b6bf -> node_5b5bf5f9 [color="#cf142b" penwidth="2"];
+node_2502774d -> node_852b9a5d [color="#cf142b" penwidth="2"];
+node_2502774d -> node_d3a83081 [color="#cf142b" penwidth="2"];
+node_ad37dccb -> node_fdda60bc [color="#cf142b" penwidth="2"];
+node_7caf6345 -> node_fdda60bc [color="#cf142b" penwidth="2"];
+node_729cbd01 -> node_ab6fd50a [color="#cf142b" penwidth="2"];
+node_f14444e8 -> node_f14444e8 [color="#cf142b" penwidth="2"];
+node_c1cd0ec3 -> node_e341d9d6 [color="#cf142b" penwidth="2"];
+node_467eaa3c -> node_8e0a082f [color="#cf142b" penwidth="2"];
+node_d5f5abda -> node_8e0a082f [color="#cf142b" penwidth="2"];
+node_a258044f -> node_8e0a082f [color="#cf142b" penwidth="2"];
+node_c2643411 -> node_8e0a082f [color="#cf142b" penwidth="2"];
+node_c7ffcca7 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_c7ffcca7 -> node_0f2039d0 [color="#cf142b" penwidth="2"];
+node_c7ffcca7 -> node_583be892 [color="#cf142b" penwidth="2"];
+node_c7ffcca7 -> node_e4a66fab [color="#cf142b" penwidth="2"];
+node_c7ffcca7 -> node_e3541cdf [color="#cf142b" penwidth="2"];
+node_c7ffcca7 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_ef9bf382 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_ef9bf382 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_8dedaf0c [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_820b1c19 [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_ea3e722d [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_8dedaf0c [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_ea3e722d [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_ea3e722d [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_8dedaf0c [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_99640d0b [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_48c66c4f [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_c2643411 [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_afce22e3 [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_afce22e3 [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_467eaa3c [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_afce22e3 [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_d5f5abda [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_afce22e3 [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_a258044f [color="#cf142b" penwidth="2"];
+node_16b0d9f0 -> node_ea3e722d [color="#cf142b" penwidth="2"];
+node_e3541cdf -> node_20fabb35 [color="#cf142b" penwidth="2"];
+node_19be0bcf -> node_820b1c19 [color="#cf142b" penwidth="2"];
+node_9e096986 -> node_9e096986 [color="#cf142b" penwidth="2"];
+subgraph cluster_3ca36b4e {
+    node_d5ffb2f3 node_79807bb1;
+    label="File: __main__";
+    name="__main__";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_0977e71b {
+    node_f7432b66;
+    label="File: const";
+    name="const";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_4363f376 {
+    node_0d14ae39 node_8dbe98af;
+    label="File: database";
+    name="database";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_fdfb7fe4 {
+    label="File: faceDataStruture";
+    name="faceDataStruture";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_99713934 {
+        node_2af8bf46 node_a6f6d079 node_a7477e5e node_cdd7156b node_8e51d536 node_94b7a319 node_4ca78a62 node_e01efbaa node_9d641324 node_d7c9bdf6 node_e79aa105 node_d9bb932a node_d749d3ab;
+        label="Class: UserData";
+        name="UserData";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_c70d9d75 {
+    node_7a06a70e node_a1b4b6bf node_5b5bf5f9 node_2502774d node_d3a83081 node_852b9a5d;
+    label="File: knnClasifiyer";
+    name="knnClasifiyer";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_170c9bac {
+    label="File: pipelineStates";
+    name="pipelineStates";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_d8851d78 {
+        node_ad37dccb;
+        label="Class: SetupPipeLine";
+        name="SetupPipeLine";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_7b961f87 {
+        node_7caf6345;
+        label="Class: TrainPipeline";
+        name="TrainPipeline";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_c596998a {
+        node_729cbd01;
+        label="Class: RunReconitionPipeLine";
+        name="RunReconitionPipeLine";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_be1a1ef5 {
+        node_ab6fd50a;
+        label="Class: Error";
+        name="Error";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_d029caa4 {
+        node_f14444e8;
+        label="Class: PipeLine";
+        name="PipeLine";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_b0db5037 {
+    label="File: state";
+    name="state";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_beb4599f {
+        node_fdda60bc node_c1cd0ec3 node_e341d9d6;
+        label="Class: State";
+        name="State";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_b8fa35ba {
+    label="File: userStats";
+    name="userStats";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_4afaf199 {
+        node_8e0a082f node_467eaa3c node_d5f5abda node_a258044f node_c2643411;
+        label="Class: UserStats";
+        name="UserStats";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_b788aea0 {
+    label="File: videoRequired";
+    name="videoRequired";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_29594ac0 {
+        node_c7ffcca7 node_ef9bf382 node_16b0d9f0 node_ea3e722d node_583be892 node_e4a66fab node_20fabb35 node_e3541cdf node_99640d0b node_48c66c4f node_afce22e3 node_0f2039d0 node_8dedaf0c;
+        label="Class: RequiredCode";
+        name="RequiredCode";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_d8823605 {
+    label="File: videoThread";
+    name="videoThread";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_22c533c2 {
+        node_19be0bcf node_820b1c19 node_9e096986;
+        label="Class: ThreadingClass";
+        name="ThreadingClass";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+}

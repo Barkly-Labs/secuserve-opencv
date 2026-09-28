@@ -1,31 +1,10 @@
-# SecuServe-Module-opencv
+"""
+Tests The Pipeline Using Mocks
+TODO: what does set up correctly mean? -> me anseer
 
-*This is my Face Reconition module forthe SecurSeve Security System*
+TODO: TEST DRIVEN DEV For Setup of pipe line 
+SETUP FOR PIPELINE:
 
-
-### What is this for 
-this is for easy testing and  dev of my SecurSeve Security System In Modules form and allows me To follow S.O.L.I.D Software princeables
-
-
-
-
-### To build and run please use the following commands
- <br>
-
-**go into the projects directory**
-
-    poetry install
-
-**to run the module**
-
-    poetry run python3 SecuServe-Module-opencv/__main__.py
-
-
-
-# What this Module does 
-
-## Setup PipeLine
-```
  read config file 
  read config file if none create one 
  
@@ -44,17 +23,17 @@ this is for easy testing and  dev of my SecurSeve Security System In Modules for
  Created DataStruct to store data from Database to be used
  Created DataStruct is has empty entryes in it try to fill the DataStruct again
  Created DataStruct is null throws acception cant continue to run
- ```
-## Trains Model For PipeLine:
- ```
+ 
+ TRAINS MODEL FOR PIPELINE:
+ 
  loads up all trained models 
  loads up all trained models and sees if the model is a vaild model
  loads up all trained models if correpet retrain it
  loades up all trained models if none train one 
  loads up all trained models if there is an new user in the db train a new model
- ```
- ## Reconizes Faces PipeLine:
- ```
+ 
+ Reconizes Faces PipeLine:
+ 
  Connects to rtsp camera and check if the stream is a vaild stream continue to use stream
  Connects to rtsp camera if the rtsp camera stream is empty retrys connection 4 times
  Connects to rtsp fails throws acception cant continue to run because cant cannect to cam
@@ -82,11 +61,27 @@ this is for easy testing and  dev of my SecurSeve Security System In Modules for
  Retrives Status of each seen person if the seen person is admin,user,unwanted,unknown save captured frame with time stamp and user status 
  Retrives Status of each seen person if the seen person is  admin,user,unwanted,unknown send zmq messge to Texting Module 
  
- ```
+ 
+ 
+"""
+from configparser import ConfigParser
+import unittest
+from unittest.mock import Mock
+from pathlib import Path
+from util.configcreator import Config as creator
+import util.consoleLog as consoleLog
 
 
-## TODO: 
+class TestConfig(unittest.TestCase):
 
-1. get this module runing in docker 
-2. get it communiating over a docker network 
-3. get it to load config files based on if its in dev mode or retail mode 
+    mock = Mock()
+
+    """
+    this is for testing the reading the config for the pipeline
+    """
+
+    def test_config_reading(self):
+
+        conf = ConfigParser()
+        config = conf.read(str(Path().absolute()) + "/data/" + "Config.ini")
+        self.assertIsNotNone(config)
